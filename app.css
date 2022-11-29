@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+body {
+  background-color: #f2fdff;
+  padding-top: 2rem;
+}
+.title {
+  margin-top: 1rem;
+}
+.title h2 {
+  text-align: center;
+  color: #48435c;
+  position: relative;
+}
+.title h2::after {
+  content: '';
+  width: 20%;
+  position: absolute;
+  height: 4px;
+  background-color: #f7ece1;
+  bottom: -5px;
+  left: 40%;
+}
+main {
+  margin: 5rem 1rem;
+}
+
+.form-container {
+  background-color: #fff;
+  text-align: center;
+  height: 10vh;
+  padding-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(196, 193, 193);
+}
+input {
+  width: 20%;
+  border: 3px solid #503b31;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 0.2rem;
+  cursor: pointer;
+  background-color: #1446a0;
+  color: #fff;
+}
+::placeholder {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+.answers.active {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.danger {
+  border: 3px solid red;
+}
+@media screen and (max-width: 900px) {
+  .alphabet {
+    margin-bottom: 0.5rem;
+  }
+  input {
+    width: 30%;
+  }
+}
